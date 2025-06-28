@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  // Mouseover and mouseleave effects for div
   $('div').mouseover(function() {
     $(this).css('background-color', 'yellow');
   });
@@ -8,7 +7,6 @@ $(document).ready(function() {
     $(this).css('background-color', 'white');
   });
 
-  // Fade in and fade out effects for buttons
   $('#fade1').click(function() {
     $('#div1').fadeIn();
   });
@@ -19,13 +17,10 @@ $(document).ready(function() {
     $('#div3').fadeIn();
   });
 
-  // Datepicker
   $('#datepicker').datepicker();
 
-  // Accordion
   $('#accordion').accordion();
 
-  // Progress bar (updates every second)
   let progress = 0;
   setInterval(function() {
     if (progress < 100) {
